@@ -5,14 +5,18 @@
 //  Created by nicholas p wilde on 12/8/22.
 //
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+// ok, now i got it down to a minimal
+// file that will stil compile and do something.
 
-int main(int argc, char * argv[]) {
-    NSString * appDelegateClassName;
-    @autoreleasepool {
-        // Setup code that might create autoreleased objects goes here.
-        appDelegateClassName = NSStringFromClass([AppDelegate class]);
-    }
-    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+// .. not all that extra crap to worry about.
+// simple....
+
+#import <UIKit/UIKit.h>
+#include <stdio.h>
+int main(int argc, char * argv[])
+{
+
+    printf("hello world");
+    
+    sleep(2);
 }
